@@ -2,15 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, getDoc, getDocs, where, query, collectionGroup, Timestamp } from "firebase/firestore";
 import dayjs from 'dayjs'
 
-
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTHDOMAIN,
-  projectId: process.env.PROJECTID,
-  storageBucket: process.env.STORAGEBUCKET,
-  messagingSenderId: process.env.SENDERID,
-  appId: process.env.APPID,
-  measurementId: process.env.MID
+  apiKey: "AIzaSyBEvd7mK6AQMPkAGaLh0AyNzJI6oC8qCjs",
+  authDomain: "syntaxsoftwaretest.firebaseapp.com",
+  projectId: "syntaxsoftwaretest",
+  storageBucket: "syntaxsoftwaretest.appspot.com",
+  messagingSenderId: "223803359180",
+  appId: "1:223803359180:web:70c34e69552f5cbd802769",
+  measurementId: "G-MXQP1YCZ51"
 };
 
 // Initialize Firebase
