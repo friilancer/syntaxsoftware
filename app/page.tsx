@@ -65,22 +65,26 @@ export default function Home() {
               </Button>
             </Link>
           </Box>
-          {/* @ts-ignore */}
-          <Box ref={containerRef} className="lg:flex max-h-[90vh] overflow-hidden bg-gray-200 gap-5 hidden" >
-            <Box className="flex flex-col gap-5" >
+          
+          <Box className="lg:flex relative max-h-[90vh] overflow-hidden bg-gray-100 gap-5 hidden">
+            {/* @ts-ignore */}
+            <Box ref={containerRef} className="lg:flex  max-h-[90vh] overflow-hidden bg-gray-100 gap-5 hidden" >
+              <Box className="flex flex-col gap-5" >
+                <ReviewsCard />
+                <ReviewsCard />
+                <ReviewsCard />
+                <ReviewsCard />
+                <ReviewsCard />
+              </Box>
+              <Box className="flex flex-col gap-5">
               <ReviewsCard />
-              <ReviewsCard />
-              <ReviewsCard />
-              <ReviewsCard />
-              <ReviewsCard />
+                <ReviewsCard />
+                <ReviewsCard />
+                <ReviewsCard />
+                <ReviewsCard />
+              </Box>
             </Box>
-            <Box className="flex flex-col gap-5">
-            <ReviewsCard />
-              <ReviewsCard />
-              <ReviewsCard />
-              <ReviewsCard />
-              <ReviewsCard />
-            </Box>
+            <Box className="absolute gradient bottom-0 left-0 h-[100%] w-[100%]"></Box>
           </Box>
         </Box>
       </main>
